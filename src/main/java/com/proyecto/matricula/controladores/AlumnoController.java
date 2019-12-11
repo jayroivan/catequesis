@@ -22,6 +22,11 @@ public class AlumnoController {
 	@Autowired
 	RepoEncargado repo2;
 	
+	@GetMapping("/")
+	public String Inicio() {
+		return "index";
+	}
+		
 		@GetMapping("/index_alumno")
 		public String Inicio(Model model) {
 			model.addAttribute("alumnos", repo.findAll());
