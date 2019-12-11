@@ -79,9 +79,19 @@
     </div>
     <div class="main-panel">
       <div class="content">
-        <p>Esto es el index</p>
-  
+      <div class="container-fluid">
+            <div class="col-md-6">
+              <div class="card card-plain">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title mt-0 d-flex justify-content-center">Reportes</h4>
+                  <!--<p class="card-category"> Here is a subtitle for this table</p>-->
+                </div>
+  		<a th:href="@{/reporte}" class="btn btn-success">Generar Reporte de Alumnos Registrados</a>
         </div>
+        </div>
+        </div>
+        </div>
+        
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
